@@ -21,7 +21,9 @@ Consumer:
     filled slot, then atomically dequeues. The fill_count semaphore ensures
     that the consumer will only dequeue when the buffer has an element to give,
     and that the thread will hang until the producer thread calls enqueue and
-    posts the fill_count semaphore.
+    posts the fill_count semaphore. The consumer has a problem returning a 
+    pointer from kernel space back to user space. The data structure in
+    kernel space still works.
 
 Test Files:
     We have a kernel-space test file called "test.c", and a slightly more
