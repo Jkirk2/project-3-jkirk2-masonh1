@@ -31,6 +31,16 @@ Test Files:
     more restrictive system calls only allows for rudimentary tests, while the
     user-space tests utilize member variables and more precise edge case setup.
 
+
+Github:
+	Issues uploading all the files to the git using the command line due to
+	large files after make clean and mr proper. We instead manually uploaded 
+	the required files manually to the git. In include/linux github truncated
+	syscalls.h from the list, we are unable to know if it has been replaced
+	with our edited file.
+
+
+
 How to compile and run tests:
 
     Run the following commands for each file.
